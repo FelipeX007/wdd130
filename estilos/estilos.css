@@ -1,9 +1,9 @@
-
 :root {
     --primary-color: steelblue;
     --text-color: #222;
     --font-base: Arial, Helvetica, sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,18 +18,52 @@ body {
     margin: 0;
 }
 
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
     color: white;
     padding: 10px;
     display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+aside {
+    grid-column: 1;
+    grid-row: 1;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+main {
+    grid-column: 2;
 }
 
 main img {
@@ -45,15 +79,9 @@ p {
     padding: 0;
 }
 
-aside {
-    width: 20rem;
-    color: #333;
-    text-align: center;
-    position: relative;
-}
-
 aside img {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
@@ -69,12 +97,10 @@ footer {
     text-align: center;
 }
 
-/* * Seletores de Classe */
-
 .caixa {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
-    margin: 1em;
+    margin: 1em 0;
     background-color: #eee;
 }
 
