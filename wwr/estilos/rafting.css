@@ -1,5 +1,5 @@
 :root {
-  --cor-primaria: #008cba;
+  --cor-primaria: #005f83;
   --cor-secundaria: #ffffff;
   --cor-destaque1: #1a252f;
   --cor-destaque2: #e9c46a;
@@ -24,7 +24,6 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* Header em coluna conforme o Wireframe (logo em cima, menu embaixo) */
 header {
   display: flex;
   flex-direction: column;
@@ -67,7 +66,6 @@ nav, p, section, article {
   padding: 8px;
 }
 
-/* Hero com position relative e h1 com position absolute */
 .hero {
   position: relative;
 }
@@ -88,7 +86,7 @@ nav, p, section, article {
   text-align: center;
   opacity: 0.8;
   background-color: var(--cor-destaque1);
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero article {
@@ -106,7 +104,6 @@ nav, p, section, article {
   margin-left: 12px;
 }
 
-/* História sem a imagem do meio, conforme o wireframe */
 .historia {
   text-align: left;
 }
@@ -115,7 +112,6 @@ nav, p, section, article {
   margin-bottom: 12px;
 }
 
-/* Galeria de Figuras */
 .aventura {
   display: flex;
   flex-wrap: wrap;
@@ -146,10 +142,9 @@ nav, p, section, article {
   margin-top: 5px;
 }
 
-/* Footer com copyright e redes sociais */
 footer {
   background-color: var(--cor-primaria);
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
