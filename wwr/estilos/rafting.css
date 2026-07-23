@@ -29,6 +29,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   padding: 16px;
 }
 
@@ -46,7 +47,7 @@ header nav ul {
 }
 
 header nav a {
-  color: #ffffff;
+  color: var(--cor-secundaria);
   text-decoration: none;
   font-weight: bold;
 }
@@ -86,7 +87,7 @@ nav, p, section, article {
   text-align: center;
   opacity: 0.8;
   background-color: var(--cor-destaque1);
-  color: #ffffff;
+  color: var(--cor-secundaria);
 }
 
 .hero article {
@@ -144,7 +145,7 @@ nav, p, section, article {
 
 footer {
   background-color: var(--cor-primaria);
-  color: #ffffff;
+  color: var(--cor-secundaria);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,4 +166,3 @@ footer {
   width: 32px;
   height: 32px;
 }
-
