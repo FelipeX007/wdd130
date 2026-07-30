@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco | Companhia de Rafting em Corredeiras</title>
 
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="description"
+      content="Entre em contato com a Companhia de Rafting em Corredeiras para dúvidas, reservas e sugestões sobre nossos passeios nas corredeiras.">
+    <meta name="author" content="Felipe">
+
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
 
     <header>
-        <img src="images/logo.png" alt="Logo da Companhia de Rafting" class="logo">
+        <img src="imagens/logo.png" alt="Logo da Companhia de Rafting" class="logo">
 
         <nav>
             <a href="index.html">Página Inicial</a>
@@ -34,7 +38,7 @@
             <div class="map-container">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.000000000000!2d-54.58!3d-25.54!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMyJzAwLjAiUyA1NMKwMzQnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-                  width="100%" height="350" allowfullscreen="" loading="lazy"
+                  width="600" height="350" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -54,18 +58,18 @@
                 <fieldset class="form-group radio-group">
                     <legend>Propósito da Mensagem:</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="geral" checked>
+                    <label for="purpose-geral">
+                        <input type="radio" id="purpose-geral" name="purpose" value="geral" checked>
                         Consulta Geral
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reserva">
+                    <label for="purpose-reserva">
+                        <input type="radio" id="purpose-reserva" name="purpose" value="reserva">
                         Pergunta sobre Reserva
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="sugestao">
+                    <label for="purpose-sugestao">
+                        <input type="radio" id="purpose-sugestao" name="purpose" value="sugestao">
                         Sugestão de Site
                     </label>
                 </fieldset>
@@ -92,7 +96,7 @@
 
             <div class="team-grid">
                 <figure class="team-member">
-                    <img src="images/funcionario1.jpg" alt="Foto de Carlos Silva, Guia Principal">
+                    <img src="imagens/funcionario1.jpg" alt="Foto de Carlos Silva, Guia Principal">
                     <figcaption>
                         <h3>Carlos Silva</h3>
                         <p>Guia Principal</p>
@@ -100,7 +104,7 @@
                 </figure>
 
                 <figure class="team-member">
-                    <img src="images/funcionario2.jpg"
+                    <img src="imagens/funcionario2.jpg"
                       alt="Foto de Ana Souza, Gerente de Operações">
                     <figcaption>
                         <h3>Ana Souza</h3>
@@ -109,7 +113,7 @@
                 </figure>
 
                 <figure class="team-member">
-                    <img src="images/funcionario3.jpg"
+                    <img src="imagens/funcionario3.jpg"
                       alt="Foto de Mariana Oliveira, Instrutora de Segurança">
                     <figcaption>
                         <h3>Mariana Oliveira</h3>
@@ -121,15 +125,15 @@
     </main>
 
     <footer>
-        <p>Conteúdo de Rodapé incluindo Ícones/Links de Mídia Social</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
+        <p>&copy; 2026 Companhia de Rafting em Corredeiras - Felipe</p>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com" target="_blank"><img src="imagens/facebook.svg"
                   alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"
-                  alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png"
+            <a href="https://twitter.com" target="_blank"><img src="imagens/linkedin.svg"
+                  alt="LinkedIn"></a>
+            <a href="https://instagram.com" target="_blank"><img src="imagens/instagram.svg"
                   alt="Instagram"></a>
-        </div>
+        </nav>
     </footer>
 
 </body>
