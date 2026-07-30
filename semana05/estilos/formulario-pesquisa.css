@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #000;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem 0 1.5rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.6em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1.25rem 1rem 1rem;
+    background-color: transparent;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: navy;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.3em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    color: #000;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    justify-self: start;
+}
+
+button {
+    margin: 1.5rem auto 0.5rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1.5rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5rem;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.item-formulario {
+    display: grid;
+    align-items: center;
+    margin: 0.4rem 0;
+}
+
+.item-formulario:has(textarea) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.item-formulario:has(textarea) label {
+    text-align: center;
+    padding-right: 0;
+}
+
+.item-formulario textarea {
+    width: 100%;
+}
+
+.coluna1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.coluna2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
